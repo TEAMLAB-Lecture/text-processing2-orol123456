@@ -1,8 +1,8 @@
 # -*- coding: utf8 -*-
-
-import unittest
+from unittest.mock import MagicMock
 import random
 import text_processing2 as tp
+import unittest
 
 
 class TestTextProcessing(unittest.TestCase):
@@ -83,3 +83,6 @@ class TestTextProcessing(unittest.TestCase):
         test_str = "....."
         pred = tp.to_camel_case(test_str)
         self.assertEqual(pred, ".....")
+
+if __name__=='__main__':
+    unittest.main()
